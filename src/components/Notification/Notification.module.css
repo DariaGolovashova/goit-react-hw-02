@@ -1,0 +1,6 @@
+.text {
+  text-align: center;
+  text-decoration: dotted;
+  color: rgb(189, 219, 245);
+  text-shadow: 2px 2px 1px black;
+}

@@ -1,0 +1,14 @@
+.selection {
+  display: flex;
+
+  justify-content: center;
+  gap: 25px;
+}
+
+.button {
+  box-shadow: 2px 2px 1px rgb(17, 2, 61);
+}
+.text {
+  color: rgb(11, 20, 117);
+  text-shadow: 0.5px 0.5px 1px #6559e3;
+}

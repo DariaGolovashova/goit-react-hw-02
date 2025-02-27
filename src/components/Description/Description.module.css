@@ -1,0 +1,15 @@
+.title {
+  font-style: italic;
+  font-size: 1.7em;
+  text-align: center;
+  text-decoration: double;
+  color: rgb(219, 245, 245);
+  text-shadow: 2px 2px 1px black;
+}
+
+.text {
+  text-align: center;
+  text-decoration: dotted;
+  color: rgb(189, 219, 245);
+  text-shadow: 2px 2px 1px black;
+}

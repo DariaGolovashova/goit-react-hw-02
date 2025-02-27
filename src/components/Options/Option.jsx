@@ -1,16 +1,27 @@
 import Notification from "../Notification/Notification";
+import css from "./Option.module.css";
 export default function Option({
   updateFeedback,
   totalFeedback,
   resetFeedback,
 }) {
   return (
-    <div>
-      <button onClick={() => updateFeedback("good")}>Good</button>
-      <button onClick={() => updateFeedback("neutral")}>Neutral</button>
+    <div className={css.selection}>
+      <button className={css.button} onClick={() => updateFeedback("good")}>
+        <span className={css.text}> Good</span>
+      </button>
+      <button className={css.button} onClick={() => updateFeedback("neutral")}>
+        <span className={css.text}> Neutral</span>
+      </button>
 
-      <button onClick={() => updateFeedback("bad")}>Bad</button>
-      {totalFeedback > 0 && <button onClick={resetFeedback}>Reset</button>}
+      <button className={css.button} onClick={() => updateFeedback("bad")}>
+        <span className={css.text}> Bad</span>
+      </button>
+      {totalFeedback > 0 && (
+        <button className={css.button} onClick={resetFeedback}>
+          <span className={css.text}> Reset</span>
+        </button>
+      )}
     </div>
   );
 }
